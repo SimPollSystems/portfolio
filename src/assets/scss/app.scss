@@ -40,5 +40,7 @@
 @include foundation-tooltip;
 @include foundation-top-bar;
 
-@include motion-ui-transitions;
-@include motion-ui-animations;
+@import 'partials/base';
+@import 'partials/typography';
+@import 'partials/utilities';
+@import 'partials/animations';

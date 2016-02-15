@@ -1,0 +1,16 @@
+@include motion-ui-transitions;
+
+
+
+.fade-in-slide-down-custom {
+	animation-duration: 2s;
+	@include mui-animation(slide($direction: down, $amount: 30px), fade($from: 0, $to: 1));
+}
+
+.spin-custom {
+	animation-duration: 2s;
+	animation-iteration-count:1;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count:1;
+	@include mui-animation(spin($direction: cw, $amount: 360deg), zoom($from: 0, $to: 1));
+}

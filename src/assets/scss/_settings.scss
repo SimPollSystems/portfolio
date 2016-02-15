@@ -57,6 +57,13 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
+
+// Custom Colors
+$orange: #e74700;
+$slate: #3d3d3d;
+$blueD: #4d6684;
+$blueL: #1499d3;
+$green: #83aa30;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -543,7 +550,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: $blueD;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
 

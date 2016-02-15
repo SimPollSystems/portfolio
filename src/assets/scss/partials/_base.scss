@@ -1,0 +1,75 @@
+// Custom Colors
+$orange: #e74700;
+$slate: #3d3d3d;
+$blueD: #4d6684;
+$blueL: #1499d3;
+$green: #83aa30;
+$offWhite: #DFDFDF;
+$primary-color: #219922;
+$secondary-color: #777;
+
+$gradTop: #1e5799;
+$gradMid: #2989d8;
+$gradMid2: #207cca;
+$gradBot: #7db9e8;
+
+$topbar-background: $blueL;
+$topbar-height: 10px;
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	background: $gradTop; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, $gradTop 0%, $gradBot 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, $gradTop 0%,$gradBot 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, $gradTop 0%,$gradBot 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradTop', endColorstr='$gradBot',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#logo {
+	height: 256px;
+	width: 256px;
+	background: url(../img/logo_white_256.png);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.logoCap {
+	display: inline-block;
+}
+
+#logoWrap {
+	font-size: 5em;
+	color: $offWhite;
+	width: 100%;
+	margin: .5em 0;
+	text-align: center;
+
+	@include breakpoint(medium down) {
+		#logo {
+			width: 128px;
+			height: 128px;
+			background-size: 128px 128px;
+		}
+		.logoCap {
+			font-size: .8em;
+		}
+	}
+	@include breakpoint(small only) {
+		.logoCap {
+			display: block;
+		}
+	}
+}
+#navWrap ul {
+	background: $blueD;
+}
+#navWrap ul li {
+	padding: 0;
+	margin: 0;
+}
+#bodyWrap {
+	padding-top: 3em;
+}
